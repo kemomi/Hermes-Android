@@ -92,7 +92,7 @@ fn main() {
             device_id,
             reason,
             approval_token,
-        } => {
+        } => (|| -> Result<Value, String> {
             let arguments: Value =
                 serde_json::from_str(args).map_err(|e| format!("--args 不是合法 JSON: {e}"))?;
             let request = ToolRequest {
@@ -114,7 +114,7 @@ fn main() {
             http_client::post_json(addr, "/v1/tools/execute", &body, timeout)
                 .map(|r| r.body)
                 .map_err(|e| e.to_string())
-        }
+        })()
 
         Command::Approve {
             request_id,

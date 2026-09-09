@@ -74,7 +74,7 @@ fn write_response(stream: &mut TcpStream, status: u16, body: &Value) -> std::io:
         500 => "Internal Server Error",
         _ => "OK",
     };
-    let mut head = format!(
+    let head = format!(
         "HTTP/1.1 {status} {reason}\r\nContent-Type: application/json\r\nContent-Length: {}\r\nConnection: close\r\n\r\n",
         payload.len()
     );
