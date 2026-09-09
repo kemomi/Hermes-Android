@@ -1,0 +1,11 @@
+name: android.device_info
+description: 查询当前 Android 设备的基础状态
+risk_level: low
+read_only: true
+requires_approval: false
+idempotent: true
+permissions:
+  - device.identity.read
+  - device.status.read
+input_schema: schema/input.json
+output_schema: schema/output.json

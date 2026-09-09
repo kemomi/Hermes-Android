@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "path": {
+      "type": "string",
+      "pattern": "^/"
+    }
+  },
+  "required": ["path"],
+  "additionalProperties": false
+}

@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "ok": { "type": "boolean" },
+    "apps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "package_name": { "type": "string" },
+          "version_name": { "type": "string" },
+          "is_system_app": { "type": "boolean" }
+        }
+      }
+    }
+  },
+  "required": ["ok"],
+  "additionalProperties": false
+}

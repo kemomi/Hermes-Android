@@ -1,0 +1,11 @@
+name: android.process_list
+description: 查询当前 Android 设备上正在运行的进程列表
+risk_level: low
+read_only: true
+requires_approval: false
+idempotent: true
+permissions:
+  - device.status.read
+  - process.list.read
+input_schema: schema/input.json
+output_schema: schema/output.json

@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "properties": {
+    "ok": { "type": "boolean" },
+    "wifi_connected": { "type": "boolean" },
+    "mobile_data_enabled": { "type": "boolean" },
+    "network_type": { "type": "string" },
+    "ip_address": { "type": "string" }
+  },
+  "required": ["ok"],
+  "additionalProperties": false
+}

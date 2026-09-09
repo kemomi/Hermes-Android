@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "properties": {
+    "ok": { "type": "boolean" },
+    "launched_package": { "type": "string" }
+  },
+  "required": ["ok"],
+  "additionalProperties": false
+}

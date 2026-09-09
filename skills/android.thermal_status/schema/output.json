@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "ok": { "type": "boolean" },
+    "cpu_temperature_celsius": { "type": "number" },
+    "gpu_temperature_celsius": { "type": "number" },
+    "throttling_level": { "type": "string" }
+  },
+  "required": ["ok"],
+  "additionalProperties": false
+}

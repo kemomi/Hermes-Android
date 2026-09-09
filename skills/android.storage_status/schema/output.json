@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "ok": { "type": "boolean" },
+    "total_bytes": { "type": "integer" },
+    "used_bytes": { "type": "integer" },
+    "available_bytes": { "type": "integer" }
+  },
+  "required": ["ok"],
+  "additionalProperties": false
+}

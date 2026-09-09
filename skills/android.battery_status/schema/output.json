@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "ok": { "type": "boolean" },
+    "level_percent": { "type": "integer" },
+    "charging": { "type": "boolean" },
+    "temperature_celsius": { "type": "number" }
+  },
+  "required": ["ok"],
+  "additionalProperties": false
+}

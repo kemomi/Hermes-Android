@@ -1,0 +1,11 @@
+name: android.storage_status
+description: 查询当前 Android 设备的存储空间使用情况
+risk_level: low
+read_only: true
+requires_approval: false
+idempotent: true
+permissions:
+  - device.status.read
+  - storage.status.read
+input_schema: schema/input.json
+output_schema: schema/output.json

@@ -1,0 +1,13 @@
+[package]
+name = "hermes-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Hermes 命令行：工具列表、调用、审批与紧急停止"
+
+[dependencies]
+hermes-core = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+clap = { workspace = true }

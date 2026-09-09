@@ -1,0 +1,10 @@
+name: android.thermal_status
+description: 查询当前 Android 设备的热状态信息
+risk_level: low
+read_only: true
+requires_approval: false
+idempotent: true
+permissions:
+  - device.status.read
+input_schema: schema/input.json
+output_schema: schema/output.json

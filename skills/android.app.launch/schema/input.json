@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "package_name": {
+      "type": "string",
+      "pattern": "^\\S+$"
+    }
+  },
+  "required": ["package_name"],
+  "additionalProperties": false
+}

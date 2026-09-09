@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "properties": {
+    "ok": { "type": "boolean" },
+    "tree": { "type": "object" }
+  },
+  "required": ["ok"],
+  "additionalProperties": false
+}

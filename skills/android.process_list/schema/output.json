@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "ok": { "type": "boolean" },
+    "processes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "pid": { "type": "integer" },
+          "name": { "type": "string" },
+          "memory_rss_kb": { "type": "integer" }
+        }
+      }
+    }
+  },
+  "required": ["ok"],
+  "additionalProperties": false
+}

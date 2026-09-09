@@ -1,0 +1,35 @@
+version: 1
+defaults:
+  allow_unknown_tools: false
+  max_execution_time_ms: 15000
+  require_audit: true
+  require_idempotency_key: true
+rules:
+  - name: allow-readonly-device
+    match:
+      risk_level: low
+      read_only: true
+    action: allow
+  - name: require-approval-for-file-delete
+    match:
+      tool: android.file.delete
+    action: require_approval
+  - name: deny-sensitive-paths
+    match:
+      path_prefix:
+        - /data/system
+        - /data/misc
+        - /system
+        - /vendor
+    action: deny
+  - name: deny-arbitrary-shell
+    match:
+      tool:
+        - shell.exec
+        - adb.shell
+        - root.exec
+    action: deny
+  - name: emergency-stop-kernel-write
+    match:
+      namespace: kernel.write
+    action: require_approval

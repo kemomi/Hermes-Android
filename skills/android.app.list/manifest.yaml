@@ -1,0 +1,10 @@
+name: android.app.list
+description: 列出当前 Android 设备上已安装的应用程序
+risk_level: low
+read_only: true
+requires_approval: false
+idempotent: true
+permissions:
+  - app.list.read
+input_schema: schema/input.json
+output_schema: schema/output.json

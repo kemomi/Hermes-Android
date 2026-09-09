@@ -1,0 +1,10 @@
+name: android.app.launch
+description: 启动指定的 Android 应用程序
+risk_level: low
+read_only: false
+requires_approval: false
+idempotent: true
+permissions:
+  - app.launch
+input_schema: schema/input.json
+output_schema: schema/output.json

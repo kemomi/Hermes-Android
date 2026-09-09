@@ -1,0 +1,10 @@
+name: android.file.list
+description: 列出指定路径下的文件与目录
+risk_level: medium
+read_only: true
+requires_approval: false
+idempotent: true
+permissions:
+  - file.list.read
+input_schema: schema/input.json
+output_schema: schema/output.json

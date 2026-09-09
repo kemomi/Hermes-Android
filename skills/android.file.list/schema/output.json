@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "ok": { "type": "boolean" },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "is_directory": { "type": "boolean" },
+          "size_bytes": { "type": "integer" }
+        }
+      }
+    }
+  },
+  "required": ["ok"],
+  "additionalProperties": false
+}

@@ -1,0 +1,10 @@
+name: android.ui.tree
+description: 获取当前 Android 设备屏幕的 UI 层级树
+risk_level: medium
+read_only: true
+requires_approval: false
+idempotent: true
+permissions:
+  - ui.tree.read
+input_schema: schema/input.json
+output_schema: schema/output.json

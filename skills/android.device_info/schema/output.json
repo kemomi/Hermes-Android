@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "properties": {
+    "ok": { "type": "boolean" },
+    "model": { "type": "string" },
+    "manufacturer": { "type": "string" },
+    "android_version": { "type": "string" },
+    "api_level": { "type": "integer" }
+  },
+  "required": ["ok"],
+  "additionalProperties": false
+}

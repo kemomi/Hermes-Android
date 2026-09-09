@@ -1,0 +1,13 @@
+﻿# Rust
+/target
+**/*.rs.bk
+
+# 本地运行产物
+/run
+/logs
+
+# 编辑器与系统
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
