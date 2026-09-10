@@ -114,7 +114,7 @@ fn main() {
             http_client::post_json(addr, "/v1/tools/execute", &body, timeout)
                 .map(|r| r.body)
                 .map_err(|e| e.to_string())
-        })()
+        })(),
 
         Command::Approve {
             request_id,
